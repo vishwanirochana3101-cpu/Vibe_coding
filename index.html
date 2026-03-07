@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .profile-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 50%, #d0d0d0 100%);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 0 20px rgba(102, 126, 234, 0.3);
+            width: 350px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15), 0 0 30px rgba(102, 126, 234, 0.5);
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .stream {
+            font-size: 18px;
+            font-weight: 400;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .bio {
+            font-size: 16px;
+            font-weight: 300;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-image">VR</div>
+        <div class="name">Vishwani Rochana</div>
+        <div class="stream">UCSC Information Technology Undergraduate</div>
+        <div class="bio">
+            Passionate Information Technology student at UCSC, dedicated to exploring innovative solutions in technology and software development. Eager to contribute to the digital world through creativity and problem-solving skills.
+        </div>
+        <button class="button">View My Projects</button>
+    </div>
+
+    <script>
+        // Simple JavaScript for interactivity
+        const card = document.querySelector('.profile-card');
+        card.addEventListener('click', () => {
+            alert('Hello! I am Vishwani Rochana.');
+        });
+
+        const button = document.querySelector('.button');
+        button.addEventListener('click', () => {
+            alert('Projects coming soon!');
+        });
+    </script>
+</body>
+</html>
